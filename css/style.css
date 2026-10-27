@@ -1,0 +1,114 @@
+*{
+    margin: 0;   
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'pixellify-sans-bold', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+
+h2{
+    font-family: 'pixellify-sans-bold', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    background-color: white;;
+    padding: 0.5rem;
+}
+
+h4{
+    font-family: 'pixellify-sans-bold', sans-serif;
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'pixellify-sans-regular', sans-serif;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 1);
+}
+header {
+     background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('../images/greggs_share_research.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    text-align: center;
+    padding: 3rem;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.75));
+}
+
+.text-panel {
+    background-color: white;
+    min-height: 275px;
+    padding: 0.5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+footer{
+    background-color: black;
+    background-size: cover;
+    padding: 0.5rem;
+    text-align: center;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.75));
+}
+#row {
+    /* use flexbox on parent div to layout a row or column of child divs */
+    display: flex;
+ /* use row for desktop and tablet, column for mobile */
+    flex-direction: row;
+    /* use flex wrap to create extra rows when needed - ie tablet layout */
+    flex-wrap: wrap;
+}
+.column{
+    /*flex 1 sets flex-grow to 1, flex-shrink to 1 and flex-basis to 1. all children should be equally sized and equally distributed */
+    flex:1;
+    padding: 10px;
+}
+img{
+    width: 100%;
+    height: 15%;
+}
+    #col1{
+        background-image: linear-gradient(to top, #00598E, rgb(121, 163, 211));
+    }
+
+    #col2{
+        background-image: linear-gradient(to top, #FFB227, #FFD700);
+    }
+
+    #col3{
+        background-image: linear-gradient(to top, #00598E, rgb(121, 163, 211));
+    }
+
+    #col4{
+        background-image: linear-gradient(to top, #FFB227, #FFD700);
+    }
+
+    #col5{
+        background-color: lightpink;
+    }
+    /*Media Queries */
+    /* break point for tablets */
+    @media screen and (max-width: 600px){
+        .column{
+            min-width: 50%;
+        }
+    }
+    /* break point for mobile */
+    @media screen and (max-width: 400px){
+        #row {
+            flex-direction: column;
+        }
+    }
+
+    .pixelify-sans-regular {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    }
+
+        .pixelify-sans-bold {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+    }
